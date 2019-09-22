@@ -10,6 +10,9 @@ import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule } from './pages-routing.module';
 
+import { BoosterComponent } from '../components/booster/booster.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -17,12 +20,14 @@ import { PagesRoutingModule } from './pages-routing.module';
     PagesComponent,
     DashboardComponent,
     ProgressComponent,
-    Graficas1Component
+    Graficas1Component,
+    BoosterComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    FormsModule
   ],
   exports: [
     PagesComponent,

@@ -7,7 +7,6 @@ import { RegisterComponent } from './auth/register.component';
 
 // shared
 import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
-import { PagesComponent } from './pages/pages.component';
 
 const routes: Routes = [
   { path: '', loadChildren: './pages/pages.module#PagesModule' },

@@ -1,0 +1,14 @@
+<h4> {{ title }} - {{ progress }} </h4>
+<div class="input-group">
+    <span class="input-group-btn">
+            <button class="btn btn-secondary" id="boton-secundary" (click)="changeValue(-1)">
+                <i class="mdi mdi-minus primary"></i>
+            </button>
+        </span>
+    <input #txtProgress type="number" class="form-control" name="progress" [(ngModel)]="progress" (ngModelChange)="onChnages($event)" min="1" max="100">
+    <span class="input-group-btn">
+            <button class="btn btn-secondary" id="boton-secundary" (click)="changeValue(1)">
+                <i class="mdi mdi-plus primary"></i>
+            </button>
+        </span>
+</div>
