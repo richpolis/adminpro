@@ -9,10 +9,12 @@ import { PagesComponent } from './pages.component';
 // modules
 import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule } from './pages-routing.module';
-
-import { BoosterComponent } from '../components/booster/booster.component';
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
+// components
+import { BoosterComponent } from '../components/booster/booster.component';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 
 
 @NgModule({
@@ -21,13 +23,15 @@ import { FormsModule } from '@angular/forms';
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
-    BoosterComponent
+    BoosterComponent,
+    GraficoDonaComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     PagesRoutingModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ],
   exports: [
     PagesComponent,
